@@ -31,6 +31,19 @@ moodSlider.addEventListener('input', function() {
     }, 300);
 });
 
+// Add +62 prefix when user starts typing
+phoneInput.addEventListener('focus', function() {
+    if (phoneInput.value === '') {
+        phoneInput.value = '+62';
+    }
+});
+
+phoneInput.addEventListener('input', function() {
+    if (!phoneInput.value.startsWith('+62')) {
+        phoneInput.value = '+62' + phoneInput.value.replace(/^\+62/, '');
+    }
+});
+
 function sendRatingToWhatsApp(phone, rating) {
     const emoji = emojis[rating];
     const message = `Halo, terima kasih telah memberikan rating: ${rating} ${emoji}`;
