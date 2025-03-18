@@ -22,7 +22,9 @@ h1{
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     text-align: center;
     animation: moveUpDown 2s ease-in-out infinite;
-    -webkit-animation: moveUpDown 2s ease-in-out infinite;
+    width: 90%;
+    max-width: 400px;
+
 }
 
 @keyframes moveUpDown {
@@ -95,7 +97,7 @@ input[type="range"]:active::-moz-range-thumb {
 
 input[type="phone"] {
     width: 58%;
-    padding: px ;
+    padding: 10px ;
     color: rgb(0, 0, 0);
     margin-top: 15px;
     margin-bottom: 20px;
@@ -213,3 +215,18 @@ footer {
     position: absolute;
 }
 
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+    .container {
+        width: 100%;
+        padding: 20px;
+    }
+
+    input[type="phone"] {
+        width: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
