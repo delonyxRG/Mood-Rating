@@ -14,7 +14,7 @@ h1{
 }
 .container {
     background: white;
-    padding: 23px;
+    padding: 25px;
     padding-right: 5px;
     padding-left: 5px;
     padding-bottom: 30px;
@@ -37,7 +37,7 @@ h1{
 }
 
 input[type="range"] {
-    width: 90%;
+    width: 78%;
     height: 10px;
     background: #bf050591;
     border-radius:  5px;
@@ -97,7 +97,7 @@ input[type="range"]:active::-moz-range-thumb {
 
 input[type="phone"] {
     width: 58%;
-    padding: 10px ;
+    padding:  PX;
     color: rgb(0, 0, 0);
     margin-top: 15px;
     margin-bottom: 20px;
@@ -174,7 +174,7 @@ button:active {
 
 
 button{
-    width: 127px;
+    width: 58%;
     height: 40px;
     cursor: pointer;
     color: #fff;
@@ -218,15 +218,17 @@ footer {
 /* Media Queries for Mobile Devices */
 @media (max-width: 600px) {
     .container {
-        width: 100%;
-        padding: 20px;
+        width: 65%;
+        padding: 1px;
+        padding-top: 26px;
+        padding-bottom: 20px;
     }
 
     input[type="phone"] {
-        width: 100%;
+        width:  58%;
     }
 
     button {
-        width: 100%;
+        width: 41%;
     }
 }
